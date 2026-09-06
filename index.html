@@ -7,113 +7,184 @@
     <meta name="keywords" content="tech, hackclub, malta">
 
     <title>Kavallieri Hack Club</title>
-    <style>
-        @font-face {
-            font-family: sansy;
-            src: url(Otfits-Grotesk-Reg.otf);
-        }
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+<style>
+    @font-face {
+        font-family: sansy;
+        src: url(Otfits-Grotesk-Reg.otf);
+    }
 
-        body {
-            background-image: url(bg.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: #ffffff;
-            font-family: "sansy", "Arial";
-            font-weight: medium;
-            text-align: center;
-            margin: 0px;
+    html {
+        height: 100%;
+    }
+
+    body {
+        background-image: url(bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        min-height: 100vh;
+        color: #ffffff;
+        font-family: "sansy", "Arial";
+        font-weight: medium;
+        text-align: center;
+        margin: 0px;
+    }
+
+    a {
+        font-family: "sansy", "Arial";
+        font-weight: bold;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 2vw;
+    }
+
+    p {
+       text-align: center;
+       font-size: 3vw;
+       padding-top: 32px;
+       padding-bottom: 25px;
+       margin: 0;
+    }
+
+    img { max-width: 100%; height: auto; }
+
+    .p3 {
+        font-family: "Courier New", monospace;
+        line-height: 1.1;
+        font-size: 0.1vw;
+        top: 0;
+        position: fixed;
+        text-align: left;
+        right: 0;
+        padding: 10px;
+        font-weight: bold;
+        white-space: pre;
+    }
+
+    .topbar {
+        font-family: "Courier New";
+        font-weight: bold;
+        top: 0;
+        padding: 5px;
+        text-align: center;
+        backdrop-filter: blur(15px);
+        background-color: #FFFFFF04;
+        border-bottom-style: solid;
+        border-bottom-color: #FFFFFFAF;
+        position: sticky;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .topbar h1 {
+        margin: 25px;
+        font-size: 2vw;
+    }
+
+    .joinclub {
+        background-color: #EB3750;
+        color: white;
+        font-family: "sansy", "Arial";
+        text-align: center;
+        border: none;
+        border-radius: 50px;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 1vw;
+        transition-duration: 0.1s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .joinclub:hover {
+        padding: 12px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    }
+
+    .github {
+        background-color: #FFFFFF;
+        font-family: "sansy", "Arial";
+        color: black;
+        text-align: center;
+        border: none;
+        border-radius: 50px;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 1vw;
+        transition-duration: 0.1s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .github:hover {
+        padding: 12px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    }
+
+    @media (max-width: 768px) {
+        .topbar h1 {
+            margin: 15px;
+            font-size: 5vw;
         }
 
         a {
-            font-family: "sansy", "Arial";
-            font-weight: bold;
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 2vw;
+            font-size: 4vw;
         }
 
         p {
-           text-align: center;
-           font-size: 3vw;
-           padding-top: 32px;
-           padding-bottom: 25px;
-           margin: 0;
+            font-size: 5vw;
+            padding-top: 20px;
+            padding-bottom: 15px;
         }
 
-        img { max-width: 100%; height: auto; }
+        .joinclub,
+        .github {
+            font-size: 3vw;
+            padding: 8px 16px;
+        }
+
+        .joinclub:hover,
+        .github:hover {
+            padding: 10px 18px;
+        }
 
         .p3 {
-            font-family: "Courier New", monospace;
-            line-height: 1.1;
-            font-size: 0.1vw;
-            top: 0;
-            position: fixed;
-            text-align: left;
-            right: 0;
-            padding: 10px;
-            font-weight: bold;
-            white-space: pre;
-        }
-        .topbar {
-            font-family: "Courier New";
-            font-weight: bold;
-            top: 0;
+            font-size: 0.06vw;
             padding: 5px;
-            text-align: center;
-            backdrop-filter: blur(15px);
-            background-color: #FFFFFF04;
-            border-bottom-style: solid;
-            border-bottom-color: #FFFFFFAF;
-            position: sticky;
-            z-index: 10;
-            overflow: hidden;
         }
+    }
 
+    @media (max-width: 480px) {
         .topbar h1 {
-            margin: 25px;
-            font-size: 2vw;
+            margin: 10px;
+            font-size: 6vw;
         }
 
-        .joinclub {
-            background-color: #EB3750;
-            color: white;
-            font-family: "sansy", "Arial";
-            text-align: center;
-            border: none;
-            border-radius: 50px;
-            padding: 10px;
-            cursor: pointer;
-            font-size: 1vw;
-            transition-duration: 0.3s;
-            box-shadow:0 8px 16px 0 rgba(0,0,0,0.2)
+        a {
+            font-size: 5vw;
+            display: block;
+            margin: 10px 0;
         }
 
-        .joinclub:hover {
-            padding: 15px;
-            box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+        p {
+            font-size: 6vw;
+            padding-top: 15px;
+            padding-bottom: 10px;
         }
 
+        .joinclub,
         .github {
-            background-color: #FFFFFF;
-            font-family: "sansy", "Arial";
-            color: black;
-            text-align: center;
-            border: none;
-            border-radius: 50px;
-            padding: 10px;
-            cursor: pointer;
-            font-size: 1vw;
-            transition-duration: 0.3s;
-            box-shadow:0 8px 16px 0 rgba(0,0,0,0.2)
+            font-size: 4vw;
+            width: 80%;
+            margin: 5px auto;
         }
 
-        .github:hover {
-            padding: 15px;
-            box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+        .p3 {
+            display: none;
         }
+    }
+</style>
 
-
-    </style>
 </head>
 <body>
     <div class="topbar">
