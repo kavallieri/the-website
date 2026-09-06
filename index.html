@@ -81,6 +81,7 @@
         color: white;
         font-family: "sansy", "Arial";
         text-align: center;
+        text-decoration: none;
         border: none;
         border-radius: 50px;
         padding: 10px;
@@ -100,6 +101,7 @@
         font-family: "sansy", "Arial";
         color: black;
         text-align: center;
+        text-decoration: none;
         border: none;
         border-radius: 50px;
         padding: 10px;
@@ -126,15 +128,18 @@
             padding-bottom: 20px;
         }
 
-        .joinclub,
-        .github {
-            font-size: 5vw;
-            padding: 8px 16px;
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
         }
 
-        .joinclub:hover,
-        .github:hover {
-            padding: 10px 18px;
+        .joinclub,
+        .github {
+            font-size: 7vw;
+            width: 80%;
+            padding: 10px;
         }
 
         .p3 {
@@ -143,29 +148,30 @@
         }
     }
 
-    @media (max-width: 480px) {
-        .topbar h1 {
-            margin: 10px;
-            font-size: 7vw;
-        }
+        @media (max-width: 480px) {
+            .topbar h1 {
+                margin: 10px;
+                font-size: 7vw;
+            }
 
-        p {
-            font-size: 13vw;
-            padding-top: 15px;
-            padding-bottom: 10px;
-        }
+            .button-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
 
-        .joinclub,
-        .github {
-            font-size: 7vw;
-            width: 100%;
-            margin: 5px auto;
-        }
+            .joinclub,
+            .github {
+                font-size: 7vw;
+                width: 80%;
+                padding: 10px;
+            }
 
-        .p3 {
-            display: none;
+            .p3 {
+                display: none;
+            }
         }
-    }
 </style>
 
 </head>
@@ -217,8 +223,10 @@
         </pre>
     </div>
     <p>Malta's first hack club. By teens, for teens.</p>
-    <a href="https://clubs.hackclub.com/auth/member?join=SJZHHN" class="joinclub">Join the club!</a>
-    <a href="https://github.com/kavallieri/the-website" class="github">This site's GitHub</a>
+    <div class="button-group">
+        <a href="https://clubs.hackclub.com/auth/member?join=SJZHHN" class="joinclub">Join the club!</a>
+        <a href="https://github.com/kavallieri/the-website" class="github">This site's GitHub</a>
+    </div>
     <script>
         const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#&%$=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#&%$=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#&%$=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#&%$=☻';
 
