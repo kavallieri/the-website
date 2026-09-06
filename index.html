@@ -8,23 +8,31 @@
 
     <title>Kavallieri Hack Club</title>
     <style>
+        @font-face {
+            font-family: sansy;
+            src: url(Otfits-Grotesk-Reg.otf);
+        }
+
         body {
-            background-color: #241f31;
+            background-color: #0f0b2b;
             color: #ffffff;
-            font-family: Arial, sans-serif;
+            font-family: "sansy", "Arial";
+            font-weight: medium;
             text-align: center;
-            padding: 20px;
+            margin: 0px;
         }
 
         a {
-            font-family: "Arial";
+            font-family: "sansy", "Arial";
             font-weight: bold;
             text-decoration: none;
             color: #ffffff;
+            font-size: 20px;
         }
 
         p {
            text-align: center;
+           font-size: 20px;
         }
 
         img { max-width: 100%; height: auto; }
@@ -32,22 +40,33 @@
         .p3 {
             font-family: "Courier New", monospace;
             line-height: 1.1;
-            font-size: 2px;
-            position: fixed;
+            font-size: 1.5px;
             top: 0;
+            position: fixed;
             text-align: left;
             right: 0;
-            padding: 25px;
+            padding: 10px;
             font-weight: bold;
             white-space: pre;
-            margin: 0;
         }
         .topbar {
             font-family: "Courier New";
-            font-size: 20px;
+            font-size: 24px;
             font-weight: bold;
-            top: 1;
+            top: 0;
+            padding: 5px;
             text-align: center;
+            backdrop-filter: blur(10px);
+            background-color: #FFFFFF04;
+            border-bottom-style: solid;
+            position: sticky;
+            z-index: 10;
+            overflow: hidden;
+        }
+
+        .topbar h1 {
+            margin: 25px;
+            font-size: 32px;
         }
 
     </style>
@@ -55,9 +74,7 @@
 <body>
     <div class="topbar">
         <h1>Kavallieri Hack Club</h1>
-    </div>
-
-    <pre class="p3" id="asciiArt">
+        <pre class="p3" id="asciiArt">
                                  (                              .
                                   ##.                         ##
                                    ####.                   ####.
@@ -99,7 +116,8 @@
                                    #####-                .#####
                                   <###                      +###
                                   #.                          .#<
-    </pre>
+        </pre>
+    </div>
     <p>Welcome to the official website of Malta's one and only hack club!</p>
     <a href="https://clubs.hackclub.com/auth/member?join=SJZHHN">Click me to join the club 🯅</a>
     <script>
