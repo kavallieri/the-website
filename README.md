@@ -1,5 +1,5 @@
 # the-website
 A repository for the official Kavallieri Hack Club.
 
-kavallieri.github.io/the-website
+[The Site](https://kavallieri.github.io/the-website)
 
