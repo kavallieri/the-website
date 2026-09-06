@@ -56,6 +56,20 @@
         white-space: pre;
     }
 
+    .p4 {
+        font-family: "Courier New", monospace;
+        line-height: 1.1;
+        font-size: 0.2vw;
+        text-align: left;
+        padding-left: 45%;
+        padding-right: 45%;
+        padding-top: 45px;
+        padding-bottom: 25px;
+        font-weight: bold;
+        white-space: pre;
+        width = 100%;
+    }
+
     .topbar {
         font-family: "Courier New";
         font-weight: bold;
@@ -116,6 +130,12 @@
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
     }
 
+    @media (min-width: 769px) {
+        .p4 {
+            display: none;
+        }
+    }
+
     @media (max-width: 768px) {
         .topbar h1 {
             margin: 15px;
@@ -146,6 +166,11 @@
             font-size: 0.06vw;
             padding: 5px;
         }
+
+        .p4 {
+            display: none;
+        }
+
     }
 
         @media (max-width: 480px) {
@@ -171,6 +196,11 @@
             .p3 {
                 display: none;
             }
+
+            .p4 {
+                display: block;
+            }
+
         }
 </style>
 
@@ -227,6 +257,53 @@
         <a href="https://clubs.hackclub.com/auth/member?join=SJZHHN" class="joinclub">Join the club!</a>
         <a href="https://github.com/kavallieri/the-website" class="github">This site's GitHub</a>
     </div>
+
+    <pre class="p4" id="asciiArt2">
+                                 (                              .
+                                  ##.                         ##
+                                   ####.                   ####.
+                                   .######              -######
+                                    ########:        .########
+                                     ##########.   ##########.
+                                      ######################~
+                                      -#####################
+                                       ####################
+                                        ##################
+                                        .################)
+                                         <###############
+            .#.                           ##############                            ##
+              ####}.                       ############.                       .####.
+               ########.                    ##########{                    ########.
+                ###########>                {#########                .###########
+                 ^##############             ########             ###############
+                  .#################~         ######         .#################}
+                    #####################     .#####     {####################.
+                     ########################. #### .########################.
+                      ######################################################
+                      ############################<#########################+
+                    .######################.   ####.   #######################
+                   ####################.      ######       ]###################
+                  ################.          .#######           ################
+                 #############.              ########.              #############.
+               .#########~                  ##########                  .#########(
+              ^######                      ############                      #######
+             ###>                         .#############                         .###
+            .                             ##############                             .
+                                         ################
+                                        ##################
+                                       .###################
+                                      .####################.
+                                      ######################
+                                     {###########.###########
+                                    .#########      #########{
+                                    #######.           #######
+                                   #####-                .#####
+                                  <###                      +###
+                                  #.                          .#<
+
+
+                                      Made with ♥ by Matteo
+        </pre>
     <script>
         const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#&%$=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#&%$=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#&%$=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#&%$=☻';
 
@@ -238,6 +315,7 @@
         }
 
         randomizeText('asciiArt');
+        randomizeText('asciiArt2');
     </script>
 </body>
 </html>
