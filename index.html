@@ -251,12 +251,27 @@
     }
 
     @media (min-width: 769px) {
-        .p4 {
+        .tagline-mobile, .going-mobile, .p4 {
             display: none;
         }
     }
 
     @media (max-width: 768px) {
+
+        .tagline-desktop {
+           display: none;
+        }
+        .tagline-mobile {
+           display: block;
+        }
+
+        .going-desktop {
+           display: none;
+        }
+        .going-mobile {
+           display: block;
+        }
+
         .happenings {
             flex-direction: column;
             align-items: center;
@@ -347,6 +362,8 @@
                 display: inline-block;
             }
 
+
+
         }
 </style>
 
@@ -398,13 +415,15 @@
                       #.                          .#
         </pre>
     </div>
-    <p>Malta's first hack club. <br><b>By teens, for teens.</b></p>
+    <p class="tagline-desktop">Malta's first hack club.<br><b>By teens, for teens.</b></p>
+    <p class="tagline-mobile">Malta's first<br>hack club.<br><b>By teens, for teens.</b></p>
     <div class="button-group">
         <a href="https://clubs.hackclub.com/auth/member?join=SJZHHN" class="joinclub">Join the club!</a>
         <a href="https://github.com/kavallieri/the-website" class="gitHub">This site's GitHub</a>
         <a href="https://discord.gg/dYhZfYC6kw" class="discord">Join our Discord!</a>
     </div>
-    <p>What's going on?</p>
+    <p class="going-desktop">What's going on?</p>
+    <p class="going-mobile">What's<br>going on?</p>
     <div class="happenings">
         <a href="https://haven.hackclub.com/#about" class="haven">
             <img id="haven" src="">
