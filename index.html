@@ -36,8 +36,8 @@
     p {
        text-align: center;
        font-size: 3vw;
-       padding-top: 32px;
-       padding-bottom: 25px;
+       padding-top: 24px;
+       padding-bottom: 24px;
        margin: 0;
     }
 
@@ -68,6 +68,7 @@
         text-align: left;
         gap: 5px;
         transition-duration: 0.2s;
+        cursor: pointer;
     }
 
     .haven:hover {
@@ -76,7 +77,7 @@
 
     .haven h1, h2 {
         margin: 0px;
-        color: #231700
+        color: #231700;
     }
 
     #haven {
@@ -143,6 +144,8 @@
         border: none;
         border-radius: 50px;
         padding: 10px;
+        padding-bottom: 7px;
+        padding-top: 10px;
         cursor: pointer;
         font-size: 1vw;
         transition-duration: 0.15s;
@@ -151,6 +154,8 @@
 
     .joinclub:hover {
         padding: 12px;
+        padding-bottom: 9px;
+        padding-top: 12px;
         box-shadow: 0 0px 16px 0 rgba(235,55,80,0.8);
     }
 
@@ -163,6 +168,8 @@
         border: none;
         border-radius: 50px;
         padding: 10px;
+        padding-bottom: 7px;
+        padding-top: 10px;
         cursor: pointer;
         font-size: 1vw;
         transition-duration: 0.15s;
@@ -171,25 +178,32 @@
 
     .discord:hover {
         padding: 12px;
+        padding-bottom: 9px;
+        padding-top: 12px;
         box-shadow: 0 0px 16px 0 rgba(114,137,218,0.8);
     }
 
-    .github {
+    .gitHub {
         background-color: #FFFFFF;
         font-family: "sansy", "Arial";
         text-align: center;
+        color: #000000;
         text-decoration: none;
         border: none;
         border-radius: 50px;
         padding: 10px;
+        padding-bottom: 7px;
+        padding-top: 10px;
         cursor: pointer;
         font-size: 1vw;
         transition-duration: 0.15s;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
     }
 
-    .github:hover {
+    .gitHub:hover {
         padding: 12px;
+        padding-bottom: 9px;
+        padding-top: 12px;
         box-shadow: 0 0px 16px 0 rgba(200,200,200,0.8);
     }
 
@@ -231,19 +245,16 @@
         .joinclub {
             font-size: 7vw;
             width: 50%;
-            padding: 10px;
         }
 
-        .github {
-           font-size: 7vw;
-           width: 60%;
-           padding: 10px;
+        .gitHub {
+            font-size: 7vw;
+            width: 60%;
         }
 
         .discord {
-           font-size: 7vw;
-           width: 60%;
-           padding: 10px;
+            font-size: 7vw;
+            width: 60%;
         }
 
         .p3 {
@@ -273,19 +284,16 @@
             .joinclub {
                 font-size: 7vw;
                 width: 50%;
-                padding: 10px;
             }
 
-            .github {
+            .gitHub {
                 font-size: 7vw;
                 width: 60%;
-                padding: 10px;
             }
 
             .discord {
                 font-size: 7vw;
                 width: 60%;
-                padding: 10px;
             }
 
             .p3 {
@@ -350,16 +358,16 @@
     <p>Malta's first hack club. <br><b>By teens, for teens.</b></p>
     <div class="button-group">
         <a href="https://clubs.hackclub.com/auth/member?join=SJZHHN" class="joinclub">Join the club!</a>
-        <a href="https://github.com/kavallieri/the-website" class="github">This site's GitHub</a>
+        <a href="https://github.com/kavallieri/the-website" class="gitHub">This site's GitHub</a>
         <a href="https://discord.gg/dYhZfYC6kw" class="discord">Join our Discord!</a>
     </div>
     <p>What's going on?</p>
     <div class="happenings">
-        <div class="haven">
+        <a href="https://haven.hackclub.com/#about" class="haven">
             <img id="haven" src="">
             <h1>Haven</h1>
             <h2>A global game jam. New friends, new skills, and free food!</h2>
-        </div>
+        </a>
     </div>
     <pre class="p4" id="asciiArt2">
                                  (                              .
