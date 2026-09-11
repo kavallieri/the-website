@@ -43,6 +43,45 @@
 
     img { max-width: 100%; height: auto; }
 
+    .happenings {
+        width: 100%;
+        gap: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .haven {
+        width: fit-content;
+        height: auto;
+        background-color: #f6d32d;
+        color: #2b1d00;
+        border: 5px solid #e5a50a;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        border-radius: 25px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        transition-duration: 0.2s;
+    }
+
+    .haven:hover {
+        padding: 15px;
+    }
+
+    .haven h1, h2 {
+        margin: 0px;
+    }
+
+    #haven {
+        border-radius: 10px;
+        display: block;
+    }
+
     .p3 {
         font-family: "Courier New", monospace;
         line-height: 1.1;
@@ -159,6 +198,16 @@
     }
 
     @media (max-width: 768px) {
+        .happenings {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .haven {
+            width: 60%;
+            height: auto;
+        }
+
         .topbar h1 {
             margin: 15px;
             font-size: 5vw;
@@ -177,23 +226,23 @@
             gap: 15px;
         }
 
-            .joinclub {
-                font-size: 7vw;
-                width: 50%;
-                padding: 10px;
-            }
+        .joinclub {
+            font-size: 7vw;
+            width: 50%;
+            padding: 10px;
+        }
 
-            .github {
-                font-size: 7vw;
-                width: 60%;
-                padding: 10px;
-            }
+        .github {
+           font-size: 7vw;
+           width: 60%;
+           padding: 10px;
+        }
 
-            .discord {
-                font-size: 7vw;
-                width: 60%;
-                padding: 10px;
-            }
+        .discord {
+           font-size: 7vw;
+           width: 60%;
+           padding: 10px;
+        }
 
         .p3 {
             font-size: 0.2vw;
@@ -302,7 +351,14 @@
         <a href="https://github.com/kavallieri/the-website" class="github">This site's GitHub</a>
         <a href="https://discord.gg/dYhZfYC6kw" class="discord">Join our Discord!</a>
     </div>
-
+    <p>What's going on?</p>
+    <div class="happenings">
+        <div class="haven">
+            <img id="haven" src="">
+            <h1>Haven</h1>
+            <h2>A global game jam. New friends, new skills, and free food!</h2>
+        </div>
+    </div>
     <pre class="p4" id="asciiArt2">
                                  (                              .
                                   ##.                         ##
@@ -361,6 +417,17 @@
 
         randomizeText('asciiArt');
         randomizeText('asciiArt2');
+    </script>
+    <script>
+        const images = ["food-3.jpg","friends-1.jpg","friends-2.jpg","friends3.jpg"]
+
+        function randomizeImg(elementId) {
+            const el = document.getElementById(elementId);
+            const randomImage = images[Math.floor(Math.random() * (images.length-1))];
+            el.src = randomImage;
+        }
+
+        randomizeImg('haven');
     </script>
 </body>
 </html>
